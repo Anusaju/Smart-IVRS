@@ -1,0 +1,345 @@
+<%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<head>
+<title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Form_component :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<!-- //bootstrap-css -->
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style-responsive.css" rel="stylesheet"/>
+<!-- font CSS -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font.css" type="text/css"/>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<script src="js/jquery2.0.3.min.js"></script>
+</head>
+<body>
+<section id="container">
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
+
+    <a href="index.html" class="logo">
+       Admin Home
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
+ 
+ 
+
+
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+        
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="images/2.png">
+                <span class="username">Admin</span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <!--  <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li> -->
+                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+       
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+            <li class="sub-menu">
+                    <a class="active" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span>Add Fields</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="active" href="addcourse">Course</a></li>
+                        <li><a class="active" href="addsubject">Subject</a></li>
+                        <!--  <li><a href="Facultyreg">FacultyReg</a></li> -->
+						
+                    </ul>
+                </li>
+             <li class="sub-menu">
+                    <a class="active" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span>Registration</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="active" href="studentreg">StudentReg</a></li>
+                        <li><a href="Facultyreg">FacultyReg</a></li>
+						
+                    </ul>
+                </li>
+                
+                <li class="sub-menu">
+                    <a class="active" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span>Tutor</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="active" href="assigntutor">AssignTutor</a></li>
+                       <li><a class="active" href="Assigngtutor">AssignGTutor</a></li>
+                       
+						
+                    </ul>
+                </li>
+                
+                <li class="sub-menu">
+                    <a class="active" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span>View Details</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="active" href="viewstudent">Student</a></li>
+                        <li><a href="viewfaculty">Faculty</a></li>
+						<li><a href="viewpayment">Payment</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>Regulations</span>
+                    </a>
+                    <ul class="sub">
+                    	<li><a href="mark">Mark</a></li>
+						
+                       
+                    </ul>
+                    
+                </li>
+                
+                   <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-bullhorn"></i>
+                        <span>Fee Details </span>
+                    </a>
+                    <ul class="sub">
+                    	<li><a href="s1">S1</a></li>
+						<li><a href="S2fee">S2</a></li>
+                        
+                    </ul>
+                </li>
+               
+              
+                
+              </ul>            </div> 
+        <!-- sidebar menu end-->
+    </div> 
+</aside>
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+	<section  class="wrapper">
+	<div class="form-w3layouts">
+        <!-- page start-->
+        <!-- page start-->
+        <div class="row">
+            <div class="col-lg-12">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Basic Information
+                        </header>
+                        <div class="panel-body">
+                            <div class="position-center"  style="margin-left: 400px;">
+                                <form role="form" action="personaldetails" enctype="multipart/form-data" method="post" >
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Date of Registration</label>
+                                    <input type="date" class="form-control" id="exampleInputEmail1" style="width: 300px;"  required="required"placeholder="Enter dor" name="dor" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputcourse">Course</label>
+                                    <select class="form-control" id="exampleInputEmail1" style="width: 300px;" placeholder="Enter course" name="course">
+                                    <c:forEach var="i" items="${cl }">
+                               
+                                    <option>${i.course }</option></c:forEach>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputname">Semester</label>
+                                     <select class="form-control" id="exampleInputEmail1" style="width: 300px;" placeholder="Enter sem" name="sem">
+                                 <option><c:out value="${ss }"></c:out></option>
+                                    <c:forEach var="i" items="${s1}">
+                               
+                                    <option>${i.sem }</option></c:forEach>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="exampleInputname">Name</label>
+                                    <input   type="text" class="form-control"  style="text-transform: uppercase; width: 300px;" id = "name" onchange="namevalid(this);" placeholder="Enter Name" name="name"
+                                    >
+                                    <span id="name1"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Photo</label>
+                                    <input type="file" id="exampleInputFile" name="photo" required="required">
+                                   <!--   <p class="help-block">Example block-level help text here.</p>-->
+                                </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputphno">PhoneNumber</label>
+                                    <input type="number" class="form-control"  id = "phone" style="width: 300px;" onchange="phvalid(this);" placeholder="Enter Phone Number" name="phno">
+                                </div>
+                                <span id="ph1"></span>
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id = "phone" style="width: 300px;" onchange="emailvalid(this);" placeholder="Enter email" name="emailid">
+                                    <span id="email"></span>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputuser">Username</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" style="width: 300px;" placeholder="Enter Username" name="username" required="required">
+                                </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputpass">Password</label>
+                                    <input type="password" class="form-control" id = "phone" style="width: 300px;" onchange="passvalid(this);" placeholder="Enter password" name="password">
+                                    <span id="strength"></span>
+                                </div>
+                                 
+                               <!--   <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>-->
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
+                            </div>
+
+                        </div>
+                    </section>
+                    </div>
+
+            
+
+<!--main content end-->
+</section>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.slimscroll.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+
+<script src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript">
+function phvalid(phone) {
+	   
+		
+    var y = document.getElementById('phone').value;
+    //alert("Phone number must be in numbers."+y);
+	   if(isNaN(y)||y.indexOf(" ")!=-1)
+	   {
+		  
+		  document.getElementById('ph1').style.color = "red";
+	  document.getElementById('ph1').innerHTML = 'Invalid number'
+		   document.getElementById('phone').focus();
+		 document.getElementById('phone').value = ""
+		// document.getElementById('ph').style.display='block';
+		//document.getElementById('ph1').style.display='none';
+	   }
+	  
+	   else if (y.length>10 || y.length<10)
+	   {
+		  document.getElementById('ph1').style.color = "red";
+	  document.getElementById('ph1').innerHTML = 'Phone number must be 10 digit'
+	   document.getElementById('phone').value = ""
+		  // document.getElementById('ph1').style.display='block';
+		 //document.getElementById('ph').style.display='none';
+		    document.getElementById('phone').focus();
+		   
+	   }
+	   else
+		   {
+		 
+		  document.getElementById('add1').innerHTML = ""
+	// document.getElementById('ph').style.display='none';
+	// document.getElementById('ph1').style.display='none';
+		   }
+}
+
+//name
+function namevalid(inputtxt) {
+     		
+     		var letters = /^[A-Za-z]+$/;
+     		var val = inputtxt.value.replace(/\s/g, '');
+     		document.getElementById('name1').innerHTML = ""
+     		  if (val.match(letters)) {
+     			 // document.getElementById('name1').style.display='none';
+
+     		  } else {
+     			 // document.getElementById('name1').style.display='block';
+     			 //alert("Not valid");
+     			 document.getElementById('name1').style.color = "red";
+     			 document.getElementById('name1').innerHTML = 'Invalid name'
+     			 document.getElementById('name').value = "";
+     			 document.getElementById('name').focus();
+     		  }
+     		
+     		}
+     		//email
+     		function emvalid(emailfield) {
+       	  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+       	document.getElementById('email1').innerHTML = ""
+             if (reg.test(emailfield.value) == false) 
+             {
+            	 document.getElementById('email1').style.color = "red";
+     			 document.getElementById('email1').innerHTML = 'Enter a valid id'
+            	 // document.getElementById('em').style.display='block';
+           	     document.getElementById('email').value = ""
+         	     document.getElementById('email').focus();
+                 
+             }
+         }
+         //password
+         function passwordChanged() {
+	var strength = document.getElementById('strength').value;
+	var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+	var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+	var enoughRegex = new RegExp("(?=.{6,}).*", "g");
+	var pwd = document.getElementById('pwd');
+	if (pwd.value.length==0) {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Type password';
+	} else if (false == enoughRegex.test(pwd.value)) {
+	strength.innerHTML ='More characters';
+	} else if (strongRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Blue';
+		    document.getElementById('strength').innerHTML = 'Strong!';
+	} else if (mediumRegex.test(pwd.value)) {
+		 document.getElementById('strength').style.color = 'Orange';
+		    document.getElementById('strength').innerHTML = 'Medium!';
+	} else {
+		 document.getElementById('strength').style.color = 'red';
+		    document.getElementById('strength').innerHTML = 'Weak!';
+	}
+	}
+         
+         
+</script>
+</body>
+</html>
